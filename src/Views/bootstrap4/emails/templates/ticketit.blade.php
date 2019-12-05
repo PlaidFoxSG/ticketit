@@ -80,7 +80,7 @@
     <table align="center" cellpadding="0" cellspacing="0" width="100%" height="100%" >
       <tr>
         <td align="center" valign="top" bgcolor="#fff"  width="100%">
-          <center>
+          
             <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="600" class="w320">
               <tr>
                 <td align="center" valign="top">
@@ -93,12 +93,12 @@
                   </td>
               </tr>
               <tr>
-                <td>
+                <td align="center">
 
-                  <center>
+                  
                     <table cellpadding="0" cellspacing="0" width="80%">
                       <tr>
-                        <td style="margin: 20px; text-align: left color:#187272;" align="left">
+                        <td style="margin: 20px; padding: 10px; text-align: left; color:#187272;" align="left">
                             <br>
                             @yield('content')
                             <br>
@@ -106,7 +106,7 @@
                         </td>
                     </tr>
                 </table>
-            </center>
+            
 
         </td>
     </tr>
@@ -114,9 +114,9 @@
 
 <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="100%" bgcolor="{{ $setting->grab('email.color_content_bg') }}">
 <tr>
-    <td>
+    <td align="center">
 
-      <center>
+      
         <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" width="60%">
           <tr>
             <td style="color:#933f24;">
@@ -133,21 +133,21 @@
           </td>
       </tr>
   </table>
-</center>
+
 
 </td>
 </tr>
 <tr>
     <td>
-                      <div><!--[if mso]>
+                      <div style="text-align: center"><!--[if mso]>
                         <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="http://" style="height:50px;v-text-anchor:middle;width:200px;" arcsize="8%" stroke="f" fillcolor="{{ $setting->grab('email.color_button_bg') }}">
                           <w:anchorlock/>
-                          <center>
+                          
                             <![endif]-->
                             <a href="{{ url($setting->grab('admin_route')) }}"
                             style="background-color:{{ $setting->grab('email.color_button_bg') }};border-radius:4px;color:#ffffff;display:inline-block;font-family: Helvetica, Arial, sans-serif;font-size:16px;font-weight:bold;line-height:50px;text-align:center;text-decoration:none;width:200px;-webkit-text-size-adjust:none;">{{ $setting->grab('email.dashboard') }}</a>
                         <!--[if mso]>
-                          </center>
+                          
                         </v:roundrect>
                         <![endif]--></div>
                         <br>
@@ -156,7 +156,7 @@
                 </tr>
             </table>
 
-            <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width" bgcolor="{{ $setting->grab('email.color_footer_bg') }}" style="margin: 0 auto">
+            <table style="margin: 0 auto;" cellpadding="0" cellspacing="0" class="force-full-width" bgcolor="{{ $setting->grab('email.color_footer_bg') }}">
               <tr>
                 <td style="background-color:{{ $setting->grab('email.color_footer_bg') }};">
                     <br>
@@ -200,7 +200,7 @@
 </td>
 </tr>
 </table>
-</center>
+
 </td>
 </tr>
 </table>
